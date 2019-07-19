@@ -1,0 +1,706 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Regular.woff2") format('woff2'),
+    url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Regular.woff") format('woff'),
+    url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans';
+    src: url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Bold.woff2") format('woff2'),
+    url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Bold.woff") format('woff'),
+    url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  * {
+      margin: 0;
+      font-family: 'OpenSans';
+      line-height: 1.2;
+      font-size: 15px;
+      letter-spacing: 0.8px;
+  }
+  
+  header {
+    position: relative;
+    background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_767.jpg");
+    background-color: #1c2147;
+    background-size: cover;
+    color: #ffffff;
+    z-index: 1;
+  }
+  
+  header::before {
+    content: '';
+    background-color: #1c2147;
+    position: absolute;
+    opacity: 0.9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .logo_text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 33px;
+    height: 36px;
+    fill: #ffffff;
+  }
+  
+  .head_container {
+    padding: 130px 20px 0px 20px;
+    font-weight: bold;
+    line-height: 1.11;
+    letter-spacing: 1.4px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-family: 'OpenSans-Bold', sans-serif;
+  }
+  
+  .head_text {
+    display: block;
+    font-size: 28px;
+    padding-top: 17px;
+    padding-left: 44px;
+  }
+  
+  .store_container {
+    padding: 85px 20px 70px 20px;
+  }
+  
+  .store_botton {
+    color: white;
+    text-decoration: none;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #5e42b0;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .store_logo {
+    height: 25px;
+    margin-right: 10px;
+    fill: #ffffff;
+  }
+  
+  .store_text {
+    width: 90px;
+    font-size: 7px;
+    font-weight: 300;
+    font-family: 'OpenSans-Regular', sans-serif;
+  }
+  
+  .store_text:nth-child(2) {
+    font-weight: bold;
+  }
+  
+  .athlets, .players {
+    position: relative;
+  }
+  
+  .athlets_head, .players_head, .small_h2 {
+    padding-top: 13px;
+    padding-left: 20px;
+    font-size: 50px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .connection_head, .collaboration_head, .growth_head {
+    display: inline;
+    font-size: 23px;
+    color: #c1c1c1;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .footballer_img {
+    width: 192px;
+  }
+  
+  .basketballer_img {
+    width: 302px;
+  }
+  
+  .footballer_img, .basketballer_img {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+  }
+  
+  .heading_wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .rectangle {
+    display: block;
+    width: 15px;
+    height: 4px;
+    margin-top: 2px;
+    margin-right: 10px;
+    border-radius: 2px;
+    background-color: #5e42b0;
+  }
+  
+  .heading_prefix{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .section_connection {
+    z-index: 1;
+    background-color: #fafafa;
+    padding: 80px 20px 50px 20px;
+    margin-top: 233px;
+  }
+  
+  .section_collaboration {
+    background-color: #f5f4f9;
+    padding: 55px 20px;
+  }
+  
+  .section_growth {
+    background-color: #5e42b0;
+    padding: 55px 20px;
+  }
+  
+  .players .section_growth {
+    background-color: #090c35;
+  }
+  
+  .players .section_growth .heading_prefix {
+    color: #8765dd;
+  }
+  
+  .section_growth p {
+    color: #ffffff;
+  }
+  
+  .section_growth .rectangle {
+    background-color: #ffffff;
+  }
+  
+  .image_wrapper {
+    min-height: 33vw;
+    background-color: #b3d5f0;
+  }
+  
+  .be_active_img, .find_contact_img, .work_it_img {
+    display: block;
+    width: 100%;
+  }
+  
+  .be_active, .find_contact, .work_it {
+    position: relative;
+  }
+  
+  .heading_rectangle {
+    position: absolute;
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    padding-top: 27px;
+    padding-left: 27px;
+    left: 20px;
+    margin-top: -61px;
+    background-color: #5e42b0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f5f6f7;
+  }
+  
+  .heading_rectangle .rectangle {
+    width: 17px;
+    opacity: 0.3;
+    background-color: #ffffff;
+  }
+  
+  .block_wrapper {
+    padding: 25px 20px 75px 20px;
+  }
+  
+  .small_h2 {
+    font-size: 28px;
+    padding: 0px;
+  }
+  
+  .block_wrapper p {
+    font-size: 16px;
+    line-height: 1.25;
+    padding-top: 15px;
+  }
+  
+  footer {
+    position: relative;
+    background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_767.jpg");
+    background-color: #1c2147;
+    background-size: cover;
+    color: #ffffff;
+    padding: 100px 0px 10px 0px;
+    z-index: 1;
+  }
+  
+  footer::before {
+      content: '';
+      background-color: #1c2147;
+      position: absolute;
+      opacity: 0.9;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  }
+  
+  .logo_wrapper {
+    display: flex;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background: linear-gradient(to top, #50379a, #7756d7);
+  }
+  
+  .logo {
+    height: 50px;
+    margin: auto;
+  }
+  
+  .foot_container {
+    padding-top: 50px;
+  }
+  
+  .foot_head {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px;
+  }
+  
+  .under_foot_head_text {
+    padding-top: 3px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #9b8ec1;
+  }
+  
+  footer .store_container {
+    padding-top: 75px;
+    padding-bottom: 35px;
+  }
+  
+  @media (min-width: 641px) and (max-width: 960px) {
+    
+    header {
+      background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_1280.jpg");
+      }
+    
+    .logo_text {
+      padding-top: 40px;
+      height: 56px;
+      }
+  
+    .head_container {
+       padding: 165px 90px 0px 90px;
+      }
+  
+    h1 {
+       font-size: 63px;
+       font-family: 'OpenSans-Bold', sans-serif;
+      }
+  
+    .head_text {
+        font-size: 63px;
+        padding-top: 0;
+        padding-left: 105px;
+      }
+  
+    .store_container {
+        padding: 300px 60px 90px 60px;
+        display: flex;
+      }
+  
+    .store_botton {
+        width: calc(50% - 15px);
+        height: 77px;
+        border-radius: 40px;
+        margin-bottom: 0;
+    }
+  
+    .store_botton:nth-child(n+2) {
+      margin-left: 30px;
+    }
+  
+    .store_logo {
+      height: 45px;
+      margin-right: 28px;
+    }
+  
+    .store_text {
+      width: auto;
+      font-size: 14px;
+      font-family: 'OpenSans-Regular', sans-serif;
+      }
+  
+    .store_text:nth-child(2) {
+      font-weight: bold;
+      }
+    
+    .athlets_head, .players_head {
+      padding-top: 65px;
+      padding-left: 290px;
+      font-size: 80px;
+      font-family: 'OpenSans-Bold', sans-serif;
+    }
+  
+    .connection_head, .collaboration_head, .growth_head {
+      font-size: 32px;
+      font-family: 'OpenSans-Regular', sans-serif;
+    }
+  
+      .footballer_img {
+        width: 497px;
+        margin-left: 0px;
+        top: 94px;
+        left: -162px;
+      }
+  
+      .rectangle {
+        width: 21px;
+        height: 5px;
+        margin-top: 5px;
+        margin-right: 13px;
+      }
+  
+      .heading_prefix{
+        font-size: 18px;
+        font-family: 'OpenSans-Bold', sans-serif;
+      }
+  
+      .section_connection {
+        background-color: #ffffff;
+        margin-top: 0px;
+      }
+  
+      .section_connection, .section_collaboration, .section_growth {
+        padding: 35px 20px 30px 290px;
+      }
+  
+      .section_connection p, .section_collaboration p, .section_growth p {
+        font-size: 16px;
+        line-height: 1.75;
+      }
+  
+      .players h2 {
+        padding-left: 34px;
+      }
+  
+      .basketballer_img {
+        width: 436px;
+        margin-left: 0px;
+        top: 39px;
+        left: calc(100% - 436px);
+      }
+  
+      .players .section_connection, .players .section_collaboration, .players .section_growth {
+        padding: 35px 310px 30px 32px;
+      }
+  
+      .heading_rectangle {
+        width: 116px;
+        height: 116px;
+        padding-top: 42px;
+        padding-left: 44px;
+        left: 33px;
+        margin-top: -90px;
+        font-size: 24px;
+      }
+  
+      .heading_rectangle .rectangle {
+        width: 28px;
+      }
+  
+      .block_wrapper {
+        padding: 55px 34px 105px 34px;
+      }
+  
+      .small_h2 {
+        font-size: 80px;
+      }
+  
+      .block_wrapper p {
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 1.2px;
+        padding-top: 20px;
+      }
+  
+      footer {
+        background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_1280.jpg");
+        padding: 126px 0px 24px 0px;
+      }
+  
+      .logo_wrapper {
+        width: 130px;
+        height: 137px;
+        border-radius: 30px;
+      }
+  
+      .logo {
+        height: 90px;
+      }
+  
+      .foot_container {
+        padding-top: 60px;
+      }
+  
+      .foot_head {
+        font-size: 80px;
+      }
+  
+      .under_foot_head_text {
+        font-size: 36px;
+        color: #a496ca;
+      }
+  
+      footer .store_container {
+        padding-top: 280px;
+        padding-bottom: 15px;
+      }
+  }
+  
+  @media (min-width: 961px) {
+  
+    header {
+      background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_1920.jpg");
+    }
+  
+    .logo_text {
+      padding-top: 45px;
+      height: 52px;
+     }
+  
+    .head_container {
+      padding: 285px 10% 0px 10%;
+    }
+  
+    h1 {
+      width: auto;
+      font-size: 90px;
+      font-family: 'OpenSans-Bold', sans-serif;
+    }
+  
+    .head_text {
+      font-size: 90px;
+      padding-top: 0px;
+      margin-top: -17px;
+      padding-left: 28.75%;
+    }
+  
+    .store_container {
+      padding: 200px 60px 110px 60px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .store_botton {
+      width: 311px;
+      height: 77px;
+      border-radius: 40px;
+      margin-bottom: 0;
+    }
+  
+    .store_botton:hover {
+      background-color: #7e42b0;
+    }
+  
+    .store_botton:nth-child(n+2) {
+      margin-left: 50px;
+    }
+  
+    .store_logo {
+      height: 45px;
+      margin-right: 28px;
+    }
+  
+    .store_text {
+      width: auto;
+      font-size: 14px;
+      font-family: 'OpenSans-Regular', sans-serif;
+    }
+  
+    .store_text:nth-child(2) {
+      font-weight: bold;
+    }
+    
+    .athlets_head, .players_head {
+      padding-top: 90px;
+      padding-left: calc(50% + 50px);
+      font-size: 80px;
+    }
+  
+    .connection_head, .collaboration_head, .growth_head {
+      font-size: 36px;
+    }
+  
+    .footballer_img {
+      width: 566px;
+      margin-left: 0px;
+      left: calc(50% - 566px);
+      top: 27px;
+    }
+  
+    .rectangle {
+      width: 21px;
+      height: 5px;
+      margin-top: 5px;
+      margin-right: 13px;
+    }
+  
+    .heading_prefix{
+      font-size: 18px;
+    }
+  
+    .section_connection {
+      background-color: #ffffff;
+      margin-top: 0px;
+    }
+  
+    .section_connection, .section_collaboration, .section_growth {
+        padding: 80px 195px 45px calc(50% + 50px);
+    }
+  
+    .section_connection p, .section_collaboration p, .section_growth p {
+      margin-top: -5px;
+      font-size: 20px;
+      line-height: 1.4;
+      letter-spacing: 1px;
+    }
+  
+    .players_head {
+      padding-left: 10%;
+    }
+  
+    .basketballer_img {
+      width: 55vw;
+      margin-left: 0px;
+      top: -23px;
+      left: calc(50% - 10vw);
+    }
+  
+    .players .section_connection, .players .section_collaboration, .players .section_growth {
+      padding: 80px 50% 55px 10%;
+    }
+  
+    .be_active, .find_contact, .work_it {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+  
+    .find_contact {
+      flex-direction: row-reverse;
+      }
+  
+    .image_wrapper, .block_wrapper {
+        width: 50%;
+      }
+  
+    .heading_rectangle {
+      width: auto;
+      height: auto;
+      padding: 3.18vw 3.65vw;
+      left: calc(50% - 4.37vw);
+      margin-top: -77px;
+      font-size: 24px;
+    }
+  
+    .heading_rectangle .rectangle {
+      width: 28px;
+      margin-right: 0px;
+     }
+  
+    .block_wrapper {
+      box-sizing: border-box;
+      padding: 0px 9.5% 2.5% 6.67%;
+    }
+  
+    .small_h2 {
+      font-size: 80px;
+    }
+  
+    .block_wrapper p {
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 1.2px;
+        padding-top: 5vw;
+    }
+  
+    footer {
+      background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_1920.jpg");
+      padding: 126px 0px 52px 0px;
+    }
+  
+    .foot_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logo_wrapper {
+      margin: 0px;
+      width: 130px;
+      height: 137px;
+      border-radius: 30px;
+    }
+  
+    .logo {
+      height: 90px;
+    }
+  
+    .foot_container {
+      padding-top: 0px;
+      padding-left: 37px;
+    }
+  
+    .foot_head {
+      font-size: 80px;
+    }
+  
+    .under_foot_head_text {
+      font-size: 30px;
+      color: #a496ca;
+      text-align: left;
+    }
+  
+    footer .store_container {
+      padding-top: 150px;
+      padding-bottom: 240px;
+    }
+  }
