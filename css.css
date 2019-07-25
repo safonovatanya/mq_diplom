@@ -1,24 +1,23 @@
 @font-face {
     font-family: 'OpenSans';
-    src: url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Regular.woff2") format('woff2'),
-    url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Regular.woff") format('woff'),
-    url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Regular.ttf") format('truetype');
+    src: url("../sources/fonts/OpenSans-Regular.woff2") format('woff2'),
+    url("../sources/fonts/OpenSans-Regular.woff") format('woff'),
+    url("../sources/fonts/OpenSans-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'OpenSans';
-    src: url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Bold.woff2") format('woff2'),
-    url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Bold.woff") format('woff'),
-    url("https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Bold.ttf") format('truetype');
+    src: url("../sources/fonts/OpenSans-Bold.woff2") format('woff2'),
+    url("../sources/fonts/OpenSans-Bold.woff") format('woff'),
+    url("../sources/fonts/OpenSans-Bold.ttf") format('truetype');
     font-weight: bold;
     font-style: normal;
   }
   
   * {
       margin: 0;
-      font-family: 'OpenSans';
       line-height: 1.2;
       font-size: 15px;
       letter-spacing: 0.8px;
@@ -97,6 +96,7 @@
   }
   
   .store_text {
+    display: block;
     width: 90px;
     font-size: 7px;
     font-weight: 300;
@@ -114,10 +114,12 @@
   .athlets_head, .players_head, .small_h2 {
     padding-top: 13px;
     padding-left: 20px;
+    padding-right: 568px;
     font-size: 50px;
     color: #e7e7e7;
     text-transform: uppercase;
     font-weight: bold;
+    font-family: 'OpenSans-Regular', sans-serif;
   }
   
   .connection_head, .collaboration_head, .growth_head {
@@ -221,6 +223,7 @@
   
   .be_active, .find_contact, .work_it {
     position: relative;
+    font-family: 'OpenSans-Regular', sans-serif;
   }
   
   .heading_rectangle {
@@ -249,12 +252,13 @@
   }
   
   .small_h2 {
-    font-size: 28px;
+    font-size: 20px;
     padding: 0px;
+    font-family: 'OpenSans-Bold', sans-serif;
   }
   
   .block_wrapper p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.25;
     padding-top: 15px;
   }
@@ -291,6 +295,7 @@
   }
   
   .logo {
+    width: 120px;
     height: 50px;
     margin: auto;
   }
@@ -306,6 +311,7 @@
     text-align: center;
     text-transform: uppercase;
     padding: 0px;
+    font-family: 'OpenSans-Regular', sans-serif;
   }
   
   .under_foot_head_text {
@@ -315,6 +321,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #9b8ec1;
+    font-family: 'OpenSans-Regular', sans-serif;
   }
   
   footer .store_container {
@@ -338,12 +345,11 @@
       }
   
     h1 {
-       font-size: 63px;
+       font-size: 64px;
        font-family: 'OpenSans-Bold', sans-serif;
       }
   
     .head_text {
-        font-size: 63px;
         padding-top: 0;
         padding-left: 105px;
       }
@@ -388,7 +394,7 @@
   
     .connection_head, .collaboration_head, .growth_head {
       font-size: 32px;
-      font-family: 'OpenSans-Regular', sans-serif;
+      font-family: 'OpenSans-bold', sans-serif;
     }
   
       .footballer_img {
@@ -420,7 +426,7 @@
       }
   
       .section_connection p, .section_collaboration p, .section_growth p {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.75;
       }
   
@@ -604,8 +610,8 @@
     }
   
     .section_connection p, .section_collaboration p, .section_growth p {
-      margin-top: -5px;
-      font-size: 20px;
+      margin-top: -4px;
+      font-size: 14px;
       line-height: 1.4;
       letter-spacing: 1px;
     }
