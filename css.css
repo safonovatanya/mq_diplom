@@ -18,9 +18,6 @@
   
   * {
       margin: 0;
-      line-height: 1.2;
-      font-size: 15px;
-      letter-spacing: 0.8px;
   }
   
   header {
@@ -55,9 +52,6 @@
   
   .head_container {
     padding: 130px 20px 0px 20px;
-    font-weight: bold;
-    line-height: 1.11;
-    letter-spacing: 1.4px;
   }
   
   h1 {
@@ -114,12 +108,11 @@
   .athlets_head, .players_head, .small_h2 {
     padding-top: 13px;
     padding-left: 20px;
-    padding-right: 568px;
+    padding-right: 66px
     font-size: 50px;
     color: #e7e7e7;
     text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'OpenSans-Regular', sans-serif;
+    font-family: 'OpenSans-Bold', sans-serif;
   }
   
   .connection_head, .collaboration_head, .growth_head {
@@ -127,7 +120,7 @@
     font-size: 23px;
     color: #c1c1c1;
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: 'OpenSans-Bold', sans-serif;
   }
 
   ol {
@@ -137,6 +130,10 @@
     margin: 0;
   }
   
+  picture {
+    min-height: 35rem;
+  }
+
   .footballer_img {
     width: 192px;
   }
@@ -259,6 +256,7 @@
   
   .block_wrapper p {
     font-size: 14px;
+    font-family: 'OpenSans-Regular', sans-serif;
     line-height: 1.25;
     padding-top: 15px;
   }
@@ -342,6 +340,7 @@
   
     .head_container {
        padding: 165px 90px 0px 90px;
+
       }
   
     h1 {
@@ -349,10 +348,12 @@
        font-family: 'OpenSans-Bold', sans-serif;
       }
   
-    .head_text {
+      .head_text {
         padding-top: 0;
         padding-left: 105px;
-      }
+        font-size: 64px;
+        font-family: 'OpenSans-Bold', sans-serif;
+        }
   
     .store_container {
         padding: 300px 60px 90px 60px;
@@ -388,6 +389,7 @@
     .athlets_head, .players_head {
       padding-top: 65px;
       padding-left: 290px;
+      padding-right: 80px;
       font-size: 80px;
       font-family: 'OpenSans-Bold', sans-serif;
     }
@@ -396,9 +398,13 @@
       font-size: 32px;
       font-family: 'OpenSans-bold', sans-serif;
     }
+
+    picture {
+      min-height: 580px;
+    }
   
       .footballer_img {
-        width: 497px;
+        width: 436px;
         margin-left: 0px;
         top: 94px;
         left: -162px;
@@ -575,6 +581,7 @@
     .athlets_head, .players_head {
       padding-top: 90px;
       padding-left: calc(50% + 50px);
+      padding-right: 560px;
       font-size: 80px;
     }
   
@@ -700,10 +707,12 @@
     .foot_container {
       padding-top: 0px;
       padding-left: 37px;
+      max-width: 800px;
     }
   
     .foot_head {
       font-size: 80px;
+      text-align: left;
     }
   
     .under_foot_head_text {
